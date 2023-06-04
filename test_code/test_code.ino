@@ -59,9 +59,14 @@ void setup() {
   // set the motor parameters
   shields->setParameter(HALL_POLE_PAIRS, 8, BOARD1); 
   shields->setParameter(HALL_INIT_DUTY, 20, BOARD1);
+  shields->setParameter(HALL_SPEED_KP,500, BOARD1);
+  shields->setParameter(HALL_SPEED_KI,100, BOARD1);
+  
   shields->setParameter(HALL_POLE_PAIRS, 8, BOARD2);
   shields->setParameter(HALL_INIT_DUTY, 20, BOARD2);
-  
+  shields->setParameter(HALL_SPEED_KP,500, BOARD2);
+  shields->setParameter(HALL_SPEED_KI,100, BOARD2);
+
   MotorState1 = 0;
   MotorState2 = 0;
 }
